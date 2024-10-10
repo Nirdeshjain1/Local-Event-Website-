@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Web Development Workshop",
+        "date": "2024-10-20T10:00:00Z",
+        "location": "Room 101",
+        "description": "A workshop on web development for beginners."
+    },
+    {
+        "name": "AI & Machine Learning Seminar",
+        "date": "2024-10-25T14:00:00Z",
+        "location": "Auditorium",
+        "description": "An insightful seminar on AI and machine learning."
+    }
+]

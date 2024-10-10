@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Events Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    <script>
+        function onLoad() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init({
+                    client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com'
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <h1>Local Events Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login">
+    <h2>Login</h2>
+    <div id="login-button">
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events">
+    <h2>Available Events</h2>
+    <div id="events-container"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Local Events Dashboard</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
